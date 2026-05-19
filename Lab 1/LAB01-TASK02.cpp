@@ -1,8 +1,4 @@
-// ConsoleApplication1.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
@@ -15,18 +11,16 @@ int main()
 
 	int *ptra = &a;
 	int *ptrb = &b;
-	cout << "Memory address a: " << ptra<<endl;
-	cout << "Memory address b: " << ptrb<<endl;
-	*ptra += *ptrb;   //a=a+b;
+	cout << "Memory address a: " << ptra << endl;
+	cout << "Memory address b: " << ptrb << endl;
+	*ptra += *ptrb;		   // a=a+b;
 	*ptrb = *ptra - *ptrb; // b=a+b-b;
 	*ptra -= *ptrb;
 
 	cout << "a= " << a << endl;
 	cout << "b= " << b << endl;
 
-	int c = (*ptra)*(*ptrb);
+	int c = (*ptra) * (*ptrb);
 	cout << "c= " << c << endl;
-	system("pause");
 	return 0;
 }
-
