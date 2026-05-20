@@ -24,6 +24,8 @@ int main()
 
 void cubeByPtr(int *p)
 {
+	cout << "Memory address of a: " << p << endl;
+	cout << "Inside cubeByPtr, before cubing: " << *p << endl;
 	*p = (*p) * (*p) * (*p);
 }
 void cubeByRef(int &r)
