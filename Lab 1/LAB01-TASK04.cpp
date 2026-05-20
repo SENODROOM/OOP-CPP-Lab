@@ -8,6 +8,8 @@ int main()
 	int a;
 	cout << "Enter a: ";
 	cin >> a;
+
+	// Call function to reset a to zero
 	int *ptr = &a;
 	int *newptr = resetToZero(ptr);
 
