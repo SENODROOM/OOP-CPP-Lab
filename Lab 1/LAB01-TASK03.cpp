@@ -1,11 +1,8 @@
-// ConsoleApplication1.cpp : Defines the entry point for the console application.
-//
-
-#include "stdafx.h"
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void swapping(int &a,int &b){
+void swapping(int &a, int &b)
+{
 	int temp = b;
 	b = a;
 	a = temp;
@@ -24,9 +21,5 @@ int main()
 	cout << "a= " << a << endl;
 	cout << "b= " << b << endl;
 
-
-
-	system("pause");
 	return 0;
 }
-
